@@ -7,9 +7,12 @@
 }
 
 .about-header {
-    @apply text-5xl underline font-bold ml-10 text-primary mb-10;
+    @apply text-3xl sm:text-5xl text-center sm:text-left underline font-bold sm:ml-10 text-primary mb-2 sm:mb-10;
 }
 
 div.prose > h2 > img  {
-   @apply w-10 ml-5;
+    @apply w-10 ml-5;
+}
+div.prose > h2 {
+    @apply h-16 my-5;
 }

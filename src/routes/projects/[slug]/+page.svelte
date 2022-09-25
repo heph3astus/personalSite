@@ -19,7 +19,7 @@
         <SvelteMarkdown {source} />
     </div> 
     <div>
-        <div class="flex">
+        <div class="flex my-16 rounded-xl shadow-sm bg-accent text-white">
             <a href={data.project.demo} class="underline font-bold text-xl cursor-pointer m-5">{data.project.name} Website</a>
             <a href={data.project.sourceCode} class="underline font-bold text-xl cursor-pointer m-5">Source Code</a>
         </div>

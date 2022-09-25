@@ -8,12 +8,12 @@
 <div 
     class={`navbar font-extrabold text-xl pl-7 pr-5 ${main?"":"bg-primary"}`}
 >
-    <a href="/" class="navbar-start">
+    <a href="/" class="navbar-start flex flex-1 items-center">
         <!-- svelte-ignore a11y-missing-attribute -->
         <img src="/logo.svg" class="h-8 mr-3">
         <span class={`${main ? "" : "text-white drop-shadow-md"}`}>Eleanor Olson</span>
     </a>
-    <div class="navbar-end">
+    <div class="navbar-end flex-0 w-0 invisible sm:w-auto sm:visible">
         {#if main === true}
             <span use:scrollto={"#about"} class={header}>About Me</span>
             <span use:scrollto={"#projects"} class={header}>Projects</span>
