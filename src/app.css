@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-item {
+    @apply px-2 py-2 transition-all hover:bg-base-200 rounded-md cursor-pointer;
+}
+
+.about-header {
+    @apply text-5xl underline font-bold ml-10 text-primary mb-10;
+}
+
+div.prose > h2 > img  {
+   @apply w-10 ml-5;
+}
