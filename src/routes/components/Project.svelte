@@ -3,11 +3,18 @@
     export let project;
     const filepath = "/projects/" + project.slug;
     let hovered = false;
+    let width;
     import { fade } from "svelte/transition";
 </script>
 
 
-<a class="w-60 h-60 border-2 rounded-[50px] shadow-xl m-5 overflow-hidden grid" on:pointerenter={() => {hovered = true}} on:pointerleave={() => {hovered = false}} href={filepath}>
+<a 
+    bind:clientWidth={width}
+    class="w-60 h-60 border-2 rounded-[50px] shadow-xl m-5 overflow-hidden grid" 
+    on:pointerenter={() => {hovered = width >= 640}} 
+    on:pointerleave={() => {hovered = false}} 
+    href={filepath}
+>
     {#if hovered}
         <div 
             in:fade={{duration: 200}}

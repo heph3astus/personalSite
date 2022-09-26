@@ -11,10 +11,8 @@
 </svelte:head>
 
 <Navbar main={false} />
-<div class="w-full flex flex-col items-center justify-center bg-brimary">
-    <div class="max-w-[1000px] mt-10 mx-10">
-        <img src={data.project.headerImage[0].url} alt="header" /> 
-    </div>
+<div class="w-full flex flex-col items-center justify-center">
+    <img src={data.project.headerImage[0].url} alt="header" class=" w-2/3 my-16" /> 
     <div class="prose prose-xl mt-10 prose-h2:w-full prose-h2:flex prose-h2:items-center prose-image mx-10">
         <SvelteMarkdown {source} />
     </div> 
