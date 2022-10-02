@@ -6,24 +6,19 @@ module.exports = {
       {
         siteTheme: {
         
-        "primary": "#189090",
-                
-        "secondary": "#006060",
-                
-        "accent": "#f09048",
-                
-        "neutral": "#189090",
-                
-        "base-100": "#ffffff",
-                
-        "info": "#dcfce7",
-                
-        "success": "#0e7490",
-                
-        "warning": "#D86000",
-                
-        "error": "#EF1A2C",
-        },
+       primary: "#BF8C1C",
+    "primary-content": "#ffffff",
+    secondary: "#181830",
+    "secondary-content": "#ffffff",
+    accent: "#ffffff",
+    "accent-content": "#ffffff",
+    neutral: "#191D24",
+    "neutral-focus": "#111318",
+    "neutral-content": "#A6ADBB",
+    "base-100": "#2A303C",
+    "base-200": "#242933",
+    "base-300": "#20252E",
+    "base-content": "#A6ADBB",        },
       },
     ],
   },

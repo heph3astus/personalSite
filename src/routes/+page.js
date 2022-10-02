@@ -2,6 +2,9 @@ import { GraphQLClient } from 'graphql-request';
 
 
 export async function load() {
+
+
+
     const hygraph = new GraphQLClient(
     'https://api-us-east-1.hygraph.com/v2/cl75oaghy5gt101t887qsdric/master',
     {
@@ -31,6 +34,10 @@ export async function load() {
             slug
             githubLink
             mainProject
+            resume {
+                url
+            }
+            email
         }
         skills {
             skillName

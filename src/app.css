@@ -10,9 +10,13 @@
     @apply text-3xl sm:text-5xl text-center sm:text-left underline font-bold sm:ml-10 text-primary mb-2 sm:mb-10;
 }
 
-div.prose > h2 > img  {
+div.prose > h2 > img {
     @apply w-10 ml-5;
 }
 div.prose > h2 {
     @apply h-16 my-5;
+}
+
+.contact-button {
+    @apply bg-accent text-primary m-3 rounded-xl flex items-center justify-center h-10 p-2 cursor-pointer transition-all hover:bg-secondary transform hover:scale-110 hover:text-accent shadow-sm shadow-accent hover:shadow-base-100;
 }
